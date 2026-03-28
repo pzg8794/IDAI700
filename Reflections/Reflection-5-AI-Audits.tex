@@ -1,0 +1,121 @@
+\documentclass[12pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+
+% Journal-style formatting
+\geometry{
+paper=letterpaper,
+margin=0.7in,
+marginparwidth=0.7in,
+marginparsep=0.7in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+% Hyperlink setup
+\hypersetup{
+colorlinks=true,
+linkcolor=darkblue,
+citecolor=darkblue,
+urlcolor=darkblue,
+pdftitle={AI Audits: From Ethics Theater to Enforceable Justice},
+pdfauthor={Piter Garcia},
+pdfsubject={IDAI700 Unit 7 Reflection},
+pdfkeywords={AI audits, accountability, algorithmic governance, equity, EQUITAS}
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Reflection 5: AI Audits}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{From Ethics Theater to Enforceable Justice}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}
+{\normalfont\large\bfseries\color{darkblue}}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\color{mediumgray}}
+{\thesubsection}{1em}{}
+
+% Title formatting
+\title{
+\vspace*{1.5in}
+\textbf{\Huge AI Audits: From Ethics Theater to Enforceable Justice}\\[1.5em]
+
+\vfill
+\Huge \textbf{Piter Garcia}\\
+\LARGE IDAI700: Ethics of Artificial Intelligence\\
+Rochester Institute of Technology\\
+\texttt{pzg8794@rit.edu}\\
+
+\vfill
+\Huge \textbf{November 14, 2025}
+}
+
+\author{}
+\date{}
+
+\begin{document}
+
+% Cover page
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+% Restore header/footer
+\pagestyle{fancy}
+
+\section{Part 1: Clarifying the Basics}
+
+The technical definition of an AI audit is formal, independent assessment of an algorithm's performance against transparent, objective standards, typically producing pass/fail accountability judgments. Yet this definition is routinely stretched. In practice, ``audit'' describes informal internal checks, vendor marketing claims, and superficial compliance gestures—creating space for what I call ``ethics washing,'' where companies project accountability while maintaining harmful systems unchanged. This ambiguity is not accidental; it is systemic. The same processes that harmed marginalized groups historically are now broadcast through AI at greater scale, allowing organizations to leverage the audit label's authority to justify ongoing exploitation while extracting resources from vulnerable communities through manipulation and deceptive design.
+
+Audits are necessary because they expose algorithmic harms that might otherwise remain invisible, providing communities and regulators concrete starting points for demanding change. Yet they remain insufficient for governance. Drawing from the NIST framework, audits address only the ``measure'' phase of a complete ecosystem. True accountability requires multi-layered checks and balances: governance-layer audits establishing technical standards must themselves be held accountable by community-layer auditing processes. Domain-specific audits (education, healthcare) must check and balance one another. This distributed model ensures no single entity—corporate, governmental, or academic—holds uncontested power over fairness definitions.
+
+The financial audit analogy clarifies this maturation requirement. Early financial audits lacked unified standards, independence, and enforcement; they enabled rather than prevented fraud. Only decades of public demand, external scrutiny, and regulatory reform transformed them into credible accountability. AI audits follow identical patterns: immature, inconsistent, lacking professional norms or enforcement. The AI industry now replicates this financial history, driven by greed and revenue models that prioritize profit over public good. The pattern is clear: create hype, enrich insiders, leave society managing consequences when the bubble bursts. Yet unlike financial auditing's eventual evolution, AI governance faces pressure from companies who profit from status quo deception. We must implement robust, community-driven accountability structures now, before AI harms deepen further.
+
+Three major implementation challenges define current audit landscapes. First, \textit{scope ambiguity}—disagreement over what to audit (outputs? data? which protected groups?) means decisions about coverage are political acts rendering some harms invisible. Second, \textit{auditor independence}—most audits are vendor-commissioned, creating structural conflicts of interest ensuring accountability remains subordinate to profit. Third, \textit{benchmark contestation}—mathematical fairness definitions conflict; choosing which trade-offs matter is social and political, not technical. Every audit encodes value judgments about which groups receive protection and which face exposure.
+
+Finally, no audit can produce perfectly unbiased AI because bias is woven through data, design, and context. Asking AI to be fully unbiased is like asking humans to become hard-coded robots—impossible and misguided. My framework rejects chasing this unattainable goal; instead, it demands reducing harm and building equity by centering marginalized communities and those most affected. Making their voices, concerns, and lived experiences non-negotiable parts of design and auditing processes shifts focus from eliminating abstract ``bias'' to preventing concrete, perpetuating harm to these communities.
+
+\section{Part 2: New York City's Law 144}
+
+New York City's Local Law 144 attempted to address unchecked use of Automated Employment Decision Tools (AEDTs). These systems were rapidly deployed in hiring and promotion, operating as discriminatory black boxes unfairly screening qualified candidates from marginalized groups without transparency or recourse. The law's three requirements were straightforward: annual independent bias audits for race and gender disparities; notification to candidates that AI was used; and public posting of audit results.
+
+Yet these requirements embody a fundamental limitation: they mandate disclosure without demanding remediation. There is no ``passing'' or ``failing'' grade, no penalty for using biased tools. This ``transparency-without-accountability'' model allows companies to remain fully compliant while knowingly perpetuating discrimination. More troubling, the law was designed for conventional software tools, not the adaptive, learning systems that define modern AI. This categorical mismatch reveals the urgent need for new legal frameworks specifically designed for AI's unique complexity. We must actively draft, unite around, and advocate for legislation informed by affected communities—legislation that embeds justice principles from the foundation rather than retrofitting inadequate frameworks onto fundamentally different technologies.
+
+Critics identified two fatal flaws. First, \textit{narrow scope}: the law mandates testing only for race and gender, ignoring age, disability, religion, and national origin. This leaves many vulnerable groups unprotected and implicitly hierarchicalizes discrimination—suggesting some forms are more acceptable. Second, \textit{lack of enforcement}: the law requires disclosure of bias but not remediation of it. A company demonstrably discriminating against qualified candidates can be fully compliant. This creates a third, deeper problem: applying hiring-specific regulations to adaptable algorithmic systems reveals how inadequately our regulatory frameworks address AI's unique risks and adaptive nature.
+
+\section{Part 3: The Debate}
+
+Civil rights advocates are concerned about ``audit washing'' because it represents performative compliance that can legitimize discriminatory systems. A weak audit creates powerful illusions of safety and fairness while allowing harmful systems to continue operating behind a shield of supposed rigor. This makes legal challenge harder and regulatory intervention less likely. Yet I argue this concern extends beyond technical fixes or ethics. The problem is structural: systems designed to maximize profit have no incentive to validate claims honestly, disclose failure rates, or fix discriminatory outcomes. Market pressure incentivizes deeper deception; companies telling the truth lose competitive advantage to competitors willing to deceive.
+
+My personal view is that skepticism toward AI audits is not only justified; it is essential. ``Audit washing'' resonates deeply because I have personally experienced institutional systems that prioritized procedural integrity over human wellbeing. My chronic illness was not merely misdiagnosed or under-diagnosed by the medical system—\textit{that same system actually caused it} through prior misdiagnosis. This terrifying reality demonstrates how institutions don't just perpetuate harm; they \textit{create it}, \textit{trap people within it}, and then use internal ``audits'' and ``best practices'' to deny harm exists. They ensure you are never heard, seen, or safe—all while generating revenue from your suffering.
+
+``Audit washing'' is the algorithmic version of this institutional denial. Using technical processes to create veers of objectivity concealing underlying injustice. An audit disconnected from lived experiences of those affected is worse than useless; it legitimizes harm. The flaws that civil rights advocates identify cannot be remedied through technical means alone because the problem is not technical—it is structural and financial. No training data teaches algorithms to prioritize equity; no technical fix makes audits independent when profitable conflicts of interest remain embedded. Legal reform without enforcement teeth creates compliance theater. Ethical frameworks without power create philosophical abstraction. Only frameworks where communities define harms, contest benchmarks, and enforce remediation can serve justice. True accountability is not a report; it is redistribution of power to those most harmed.
+
+\vfill
+\noindent\centering\footnotesize\textbf{Word Count:} 600 words
+
+\end{document}

@@ -1,0 +1,129 @@
+
+\documentclass[12pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+\usepackage{enumitem}
+
+% Journal-style formatting
+\geometry{
+paper=letterpaper,
+margin=0.7in,
+marginparwidth=0.7in,
+marginparsep=0.7in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=darkblue,
+citecolor=darkblue,
+urlcolor=darkblue,
+pdftitle={AI Audits and Equity},
+pdfauthor={Piter Garcia},
+pdfsubject={IDAI700 Reflection 5},
+pdfkeywords={AI audits, bias, governance, diagnostic justice}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Reflection 5}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{AI Audits and Equity}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% Section formatting
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{darkblue}}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\color{mediumgray}}
+{\thesubsection}{1em}{}
+
+\title{
+\vspace*{2in}
+\textbf{\Huge AI Audits and Equity}\\[1em]
+\LARGE From Reactive Checks to Community Governance\\[2em]
+
+\vfill
+\Huge \textbf{Piter Garcia}\\
+\LARGE IDAI700: Ethics of Artificial Intelligence\\
+University of Rochester\\[1em]
+\Large December 7, 2025
+}
+\author{}
+\date{}
+
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+\newpage
+\pagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Part 1: Clarifying the Basics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{\textbf{Q1.} What is the technical definition of an AI audit, and why isn’t this the only definition that people use?}
+A \textit{technical} AI audit is an \textbf{independent, formal test} of an algorithm against transparent performance and fairness standards that yields a pass/fail judgment for regulators. Yet the word ``audit'' also serves as corporate perfume: vendors re‑label internal spot‑checks as audits to project rigor they have not earned. The term’s symbolic power creates profitable ambiguity, masking shallow reviews that reassure investors while providing little real protection.
+
+\subsection*{\textbf{Q2.} Why are AI audits necessary, but not sufficient for governance?}
+Audits are indispensable because they force \emph{measurement} and a documentary trail. Without them, harmed communities have no foothold to contest opaque systems. But audits alone cannot decide \textit{whether} a system should exist, nor repair harms rooted in data collection, deployment context, or downstream use. Within my EQUITAS stack, audits occupy the \emph{reactive} layer; justice demands proactive, structural, and community layers above it.
+
+\subsection*{\textbf{Q3.} What is the analogy between financial audits and AI audits supposed to clarify?}
+The comparison highlights maturity. Accounting audits needed decades, scandals, and Sarbanes–Oxley to acquire teeth. AI audits sit at a 1950s accounting stage—useful but immature, lacking firm standards, liability, or enforcement. The analogy is a warning: without new law and community power, AI audits may languish as rubber stamps.
+
+\subsection*{\textbf{Q4.} What are three major implementation challenges with AI audits?}
+\begin{enumerate}[noitemsep]
+\item \textbf{Definition drift}: “Audit” ranges from rigorous investigation to marketing brochure.%
+\item \textbf{Metric myopia}: tests ignore disability, intersectionality, or small‑N groups, leaving the most‑harmed invisible.%
+\item \textbf{Institutional capture}: auditors are paid by the firms they judge; weak penalties incentivize ``clean'' reports that keep revenue flowing.%
+\end{enumerate}
+
+\subsection*{\textbf{Q5.} Why can’t the process of auditing ever make an AI system 100\% bias‑free?}
+Bias is baked into unequal data, social context, and metric trade‑offs; erasing every trace would require freezing a dynamic world. The attainable goal is relentless bias \textit{reduction} led by those who carry the heaviest harms. Centering marginalized voices—including patients like me, whose chronic illness was \emph{created} by earlier diagnostic bias—turns audits from symbolic shields into living accountability tools.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Part 2: New York City’s Law}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{\textbf{Q6.} What issue was New York City’s Local Law 144 trying to solve?}
+Local Law 144 targets automated hiring tools that silently filter applicants and encode discrimination behind proprietary code.
+
+\subsection*{\textbf{Q7.} What does that law require companies to do?}
+Employers must secure an \textbf{annual, independent bias audit} covering race/ethnicity and sex, publish a public summary, and notify applicants when AI is used.
+
+\subsection*{\textbf{Q8.} What are two problems that critics have identified with that law?}
+First, the scope is narrow—only two protected classes and no mandated remediation. Second, it risks \emph{audit washing}: once a company ``passes,'' the public may assume fairness while structural harm persists. The deeper flaw is categorical: tool‑era law grafted onto an adaptive AI ecosystem.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Part 3: The Debate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{\textbf{Q9.} Why are some civil rights advocates concerned about ``audit washing''?}
+Advocates fear audits will become compliance theater—corporate‑funded firms issuing favorable reports, while weak legal safe harbors blunt older civil‑rights tools. A captured audit market could entrench, rather than expose, systemic discrimination.
+
+\subsection*{\textbf{Q10.} What is your personal view about AI audit skepticism and the allegation of audit washing?  Can the flaws be fixed technically, ethically, or legally?}
+Skepticism is essential; I have lived its stakes. The same health system that misdiagnosed me now buys ``AI diagnostics'' blessed by friendly auditors. Abandoning audits, however, would cede a rare measurable lever. Technical fixes (better metrics, intersectional tests), ethical codes, and legal tools (licensing, liability) help, but decisive change is structural: a new AI‑specific governance stack where audits are one layer, community power sits at the top, and failure triggers redesign or shutdown. Only then do audits serve justice rather than public‑relations.
+
+\vfill
+\noindent\textbf{Answer Word Count (questions excluded):} 603
+\end{document}
