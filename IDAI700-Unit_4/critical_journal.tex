@@ -1,0 +1,105 @@
+\documentclass[11pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+% \usepackage{abstract}  % Removed abstract
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+
+% Journal-style formatting
+\geometry{
+    paper=letterpaper,
+    margin=1in,
+    marginparwidth=0.75in,
+    marginparsep=0.125in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Reinventing AI Ethics: A Critical Journal on the AHRQ–NIMHD Framework},
+    pdfauthor={Piter Garcia},
+    pdfsubject={IDAI700 Reflection Journal},
+    pdfkeywords={artificial intelligence, AI ethics, bias mitigation, EQUITAS, Luke Munn}
+}
+
+% Header and footer (disabled on cover page)
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Reflection Journal}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{Reinventing AI Ethics}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}
+    {\normalfont\large\bfseries\color{darkblue}}
+    {\thesection}{1em}{}
+\titleformat{\subsection}
+    {\normalfont\normalsize\bfseries\color{mediumgray}}
+    {\thesubsection}{1em}{}
+
+% Title formatting
+\title{
+\vspace*{2in}
+\textbf{\Huge Reinventing AI Ethics}\[1em]
+\Large A Critical Journal on the AHRQ–NIMHD Framework Through Munn and EQUITAS\[2em]
+\large Piter Garcia\
+\small IDAI700: Ethics of Artificial Intelligence\
+Rochester Institute of Technology\
+\texttt{pzg8794@rit.edu}\[3em]
+\large October 4, 2025
+}
+
+\author{}  % Removes author info from maketitle
+\date{}    % Removes date from maketitle
+
+\begin{document}
+
+% Cover page (no header or footer)
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+% Restore fancy header/footer for rest of document
+\pagestyle{fancy}
+
+\section{Introduction}
+This journal examines the \textit{Guiding Principles to Address the Impact of Algorithm Bias on Racial and Ethnic Disparities in Health and Health Care}, an initiative developed by the U.S. Agency for Healthcare Research and Quality (AHRQ) and the National Institute on Minority Health and Health Disparities (NIMHD). Convened in 2023, the expert panel sought to mitigate algorithmic bias that has harmed marginalized communities【377242305152457†screenshot】. Their framework sets out five guiding principles—health equity, transparency, authentic engagement, fairness and accountability【941069813346299†screenshot】. Luke Munn argues that many AI ethics codes fail because they are vague, detached from structural context and lack enforcement【989989153336685†L26-L37】. My EQUITAS framework builds on this critique by emphasising the primacy of data quality and the contexts in which algorithms learn. I argue that fair AI cannot be achieved without centring data provenance, representativeness and cultural sovereignty.
+
+\section{Meaninglessness}
+Munn criticises AI ethics codes for being empty slogans that enable organisations to cherry‑pick convenient values【989989153336685†L26-L37】. The AHRQ–NIMHD framework exemplifies this risk: its five principles sound laudable, yet they offer little guidance on how to reach culturally and linguistically diverse (CLD) communities. For instance, “authentic engagement” does not explain how to involve non‑English speakers or trauma‑informed practice, and “transparency” does not clarify what kind of information must be disclosed. EQUITAS emphasises that fairness begins with the \emph{data} itself. Algorithms trained on biased or incomplete datasets cannot be redeemed by high‑level principles. Fair guidelines must therefore require dataset audits, demographic diversity, culturally and linguistically appropriate data collection, and clear documentation of data consent and provenance. Without such detailed requirements, ethics principles remain aspirational rather than actionable; operationalising fairness demands robust data practices that ensure no community is left behind.
+
+\section{Isolation}
+Munn’s second critique warns that ethics initiatives often ignore structural drivers of bias【989989153336685†L94-L111】. The AHRQ–NIMHD framework addresses the algorithmic life cycle—problem formulation, data selection, development and deployment【40996737875657†L329-L357】—yet largely sidesteps why marginalized patients are underrepresented in datasets: structural racism, healthcare access barriers and language exclusion. EQUITAS extends Munn’s critique by insisting that fair AI must tackle upstream forces. True equity requires confronting the social determinants that shape data availability, investing in community‑controlled data governance, and integrating socio‑cultural context into algorithm design. Without addressing systemic inequities and the conditions under which data are collected, technical fixes will not eliminate bias.
+
+\section{Enforcement}
+Munn argues that most ethics guidelines are toothless【989989153336685†L162-L175】. The AHRQ–NIMHD principles are nonbinding; they encourage accountability but do not mandate audits, certification or penalties. They do not create an oversight body or specify consequences for biased systems. EQUITAS contends that regulation must accompany ethics. Funding, certification and deployment should be contingent on demonstrable fairness outcomes across demographic groups【441745262921194†L874-L889】. Independent audits and empowered community oversight bodies are essential. Without enforceable mechanisms, well‑meaning guidelines risk being ignored or used for ethics washing.
+
+\section{Diversion}
+Munn warns that focusing on ethics can divert resources from deeper reforms【989989153336685†L230-L241】. The AHRQ–NIMHD initiative could inadvertently become such a diversion if healthcare organisations claim compliance while ignoring the need to collect inclusive data, fund language services and address social determinants. EQUITAS stresses that resources must be directed toward building representative datasets, culturally competent services and empowering marginalized communities to guide AI design. Ethics should not be a smokescreen for avoiding structural change.
+
+\section{Conclusion}
+Munn’s critiques of vagueness, isolation and toothlessness illuminate significant limitations in the AHRQ–NIMHD framework. Yet his analysis overlooks the central role of data. EQUITAS expands on Munn by insisting that ethical AI begins with data sovereignty, representativeness and community governance. We argue that fairness requires robust data requirements, regulatory enforcement and integration of structural reforms. Only by combining detailed data practices with systemic accountability can diagnostic AI fulfil its promise of advancing health for all.
+
+\end{document}

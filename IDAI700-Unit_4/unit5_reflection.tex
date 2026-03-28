@@ -1,0 +1,115 @@
+\documentclass[11pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+
+% Journal-style formatting
+\geometry{
+    paper=letterpaper,
+    margin=1in,
+    marginparwidth=0.75in,
+    marginparsep=0.125in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Unit 5 Reflection on AI Surveillance and Facial Recognition},
+    pdfauthor={Piter Garcia},
+    pdfsubject={IDAI700 Unit 5 Reflection},
+    pdfkeywords={AI surveillance, facial recognition, normalization, obscurity, ethics}
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Unit 5 Reflection}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{AI Surveillance and Facial Recognition}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}
+    {\normalfont\large\bfseries\color{darkblue}}
+    {\thesection}{1em}{}
+\titleformat{\subsection}
+    {\normalfont\normalsize\bfseries\color{mediumgray}}
+    {\thesubsection}{1em}{}
+
+% Title formatting
+\title{
+\vspace*{2in}
+\textbf{\Huge Surveillance, Normalization, and Ethics}\[1em]
+\Large Reflections on Unit 5 of IDAI700\[2em]
+\large Piter Garcia\\
+\small IDAI700: Ethics of Artificial Intelligence\\
+Rochester Institute of Technology\\
+\texttt{pzg8794@rit.edu}\\[3em]
+\large October 5, 2025
+}
+
+\author{}
+\date{}
+
+\begin{document}
+
+% Cover page
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+% Restore header/footer
+\pagestyle{fancy}
+
+\section{Understanding the Arguments}
+
+\subsection{AI surveillance vs. traditional surveillance}
+Stanley identifies a \emph{phase transition} from passive video recording to active real-time monitoring.  Traditional ``dumb'' cameras required expensive human review, limiting comprehensive surveillance.  AI surveillance is cheap, scalable, and tireless—analysing all footage continuously, enabling a society where everyone's public movements and behaviour are subject to constant and comprehensive evaluation.
+
+\subsection{Obscurity and its importance}
+Hartzog, Selinger, and Rhee define \emph{obscurity} as the practical difficulty of finding or understanding information due to transaction costs—time, effort, or resources.  Unlike secrecy, obscure information exists publicly but remains unlikely to be discovered.  Obscurity is essential because it enables three critical functions: (1) democracy—protecting backstage spaces for political organising against government abuse, (2) individual development—allowing experimentation and \enquote{reckless} growth without permanent consequences, and (3) collective well-being—enabling authentic relationships requiring privacy from constant performance.
+
+\subsection{Normalization and its effects}
+Normalization operates through two mechanisms: \emph{unexceptional habituation}, where a technology becomes unremarkable background, and \emph{favourably disposed normalization}, where people view practices as acceptable by observing others' participation.  This creates a \enquote{privacy death spiral} in which each acceptance lowers resistance to the next intrusion.  U.S. privacy law facilitates this through harm thresholds ignoring \enquote{privacy nicks}, consent frameworks that legitimise surveillance, and expectations-based standards that permit \enquote{whatever people can be conditioned to tolerate}.
+
+\subsection{Facial recognition's unique danger}
+The authors identify four distinctive threats: (1) legacy databases—billions of existing photos ready for exploitation, (2) harder to hide—cultural taboos and legal restrictions on face covering, (3) core to identity—faces central to human recognition and memory, and (4) acts as beacon—faces go everywhere, easily assessed at distance unlike fingerprints or DNA.  Combined, these make facial recognition \enquote{the most dangerous surveillance tool ever created.}
+
+\section{Critical Assessment}
+
+\subsection{Strengths and weaknesses of a ban}
+The ban argument is strongest when highlighting how facial recognition leverages unique features—legacy photo databases, cultural visibility, identity centrality—to enable pervasive surveillance.  The authors convincingly warn that even benign uses normalise intrusive infrastructures and that small \enquote{privacy nicks} aggregate into significant erosions of expectations.  However, the ban argument falters by leaning on dramatic rhetoric and overlooking potential benefits.  FRT has been used to find missing persons, assist in law enforcement, and enable accessibility services.  Ignoring these applications risks alienating technologists and policymakers who might otherwise help craft safeguards.  Some harms also feel overstated; the \enquote{death spiral} metaphor may be more fearsome than predictive, as societies can develop norms and laws that resist overreach.
+
+\subsection{Alternative approaches}
+Rather than outright prohibition, a combination of regulation, technical safeguards, and public education could mitigate risks.  Regulatory frameworks could require legislative approval and civil-rights impact assessments before deployment, mandate transparency about data collection and algorithmic logic, restrict FRT to narrow purposes, and prohibit broad, suspicionless surveillance.  Technical safeguards such as privacy-preserving analytics, data minimisation, and robust encryption can protect sensitive information.  Independent auditing and meaningful consent would ensure accountability.  Public education and mandatory ethics training for developers would empower individuals and embed ethical awareness into AI design.
+
+\subsection{Broader implications}
+Accepting a ban on facial recognition implies that other pervasive AI technologies might warrant similar scrutiny.  Real-time behavioural analytics, predictive policing, or social credit scoring systems could also pose unacceptable risks if deployed without robust oversight.  Conversely, a nuanced approach allowing regulated use suggests that society can balance innovation with privacy by adopting rigorous frameworks.  The key lesson is that the technology itself is not inherently harmful; harm arises from how it is designed and used.  Prohibition should be reserved for applications where misuse is all but inevitable; otherwise, targeted safeguards and inclusive governance offer a more constructive path.
+
+\vspace{1em}
+
+\noindent\textbf{Word Count:} 584 words
+
+\end{document}

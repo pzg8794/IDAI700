@@ -1,0 +1,129 @@
+\documentclass[11pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+
+% Journal-style formatting
+\geometry{
+    paper=letterpaper,
+    margin=1in,
+    marginparwidth=0.75in,
+    marginparsep=0.125in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Beyond Munn: EQUITAS Framework for Data-Centered AI Ethics},
+    pdfauthor={Piter Garcia},
+    pdfsubject={IDAI700 Unit 4 Reflection},
+    pdfkeywords={AI ethics, EQUITAS, Luke Munn, data sovereignty, CLD populations}
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Unit 4 Reflection}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{Beyond Munn: The EQUITAS Framework}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}
+    {\normalfont\large\bfseries\color{darkblue}}
+    {\thesection}{1em}{}
+\titleformat{\subsection}
+    {\normalfont\normalsize\bfseries\color{mediumgray}}
+    {\thesubsection}{1em}{}
+
+% Title formatting
+\title{
+\vspace*{2in}
+\textbf{\Huge Beyond Munn's Critique}\\[1em]
+\Large Extending AI Ethics Through the EQUITAS Framework\\[2em]
+\large Piter Garcia\\
+\small IDAI700: Ethics of Artificial Intelligence\\
+Rochester Institute of Technology\\
+\texttt{pzg8794@rit.edu}\\[3em]
+\large October 4, 2025
+}
+
+\author{}
+\date{}
+
+\begin{document}
+
+% Cover page
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+% Restore header/footer
+\pagestyle{fancy}
+
+\newpage
+\section{Where Munn Falls Short: The Data Blindness Problem}
+
+Luke Munn's critique of AI ethics as meaningless, isolated, and toothless illuminates why traditional frameworks fail marginalized communities. However, developing the EQUITAS (Equity-Quantified Unbiased Intelligence Through Algorithmic Solutions) framework for CLD diagnostic equity revealed Munn's critical blindspot: \textbf{he focuses on constraining AI outputs while ignoring formative learning environments shaping algorithmic behavior}.
+
+My experience as a Dominican adolescent facing 12 years of diagnostic delays, combined with achieving 100\% fairness compliance in RNA bias detection, demonstrates that ethics initiatives fail because they intervene too late—after AI systems learn to see marginalized communities as anomalies rather than valid ways of being human.
+
+\subsection{Meaninglessness: Beyond Abstract Principles to Data Epistemologies}
+
+Munn correctly identifies that principles like "authentic community engagement" remain strategically ambiguous. But his solution—concrete metrics—misses the deeper issue: \textbf{which datasets teach algorithms what accuracy means?} If training data reflects white, middle-class symptom presentations, no post-hoc community engagement compensates for biased epistemological foundations. Diagnostic AI learns that hyperfocus in Latino boys indicates defiance rather than ADHD \textit{before} any ethics review occurs.
+
+\textbf{EQUITAS Extension:} Require cultural phenotype representation in training data—epistemological diversity reflecting how ADHD manifests across cultural contexts. Dominican families' descriptions become curriculum, not consultation topics.
+
+\subsection{Isolation: From Systemic Context to Learning Environment Design}
+
+Munn argues AI ethics operates isolated from tech industry culture. EQUITAS reveals parallel isolation: \textbf{AI training environments isolated from communities they model}. The AHRQ-NIMHD framework addresses bias through expert-led governance while fundamental learning materials—datasets, validation metrics—remain dominated by institutional rather than community epistemologies.
+
+\textbf{EQUITAS Extension:} Create community-curated training datasets where CLD families contribute epistemic authority—defining attention differences in bilingual children, how cultural communication affects assessments, when family consultation represents strength.
+
+\subsection{Enforcement: From External Constraints to Fairness DNA}
+
+Munn's "toothless principles" critique identifies lack of binding mechanisms. EQUITAS demonstrates effective enforcement happens \textbf{during learning phases} when systems internalize fairness as core competency. Instead of post-deployment audits penalizing biased outputs, embed fairness validation loops during training. Algorithms cannot progress until demonstrating community-validated accuracy.
+
+\textbf{EQUITAS Extension:} Algorithms develop "fairness intuition"—recognizing identical symptoms require different interventions based on cultural context, communication patterns reflect linguistic diversity not pathology.
+
+\section{The Critical Missing Piece: Data as Pedagogy}
+
+Munn treats AI development as black box—input principles, output empowerment or domination. My EQUITAS work reveals \textbf{crucial action happens during formative learning}. When I retrain diagnostic algorithms using my Dominican ADHD case as curriculum, AI learns to recognize cultural expressions of distress as valid rather than anomalous. This transcends "ethics shopping" because fairness constraints embed in epistemological foundations rather than apply as external rules.
+
+\subsection{Resource Diversion Paradox}
+
+Munn warns ethics initiatives divert resources from effective approaches. The AHRQ-NIMHD framework funds expert-led bias mitigation while \textbf{algorithms continue learning from biased datasets}. EQUITAS redirects resources toward formative interventions—community-partnered dataset curation, cultural competency training for AI systems, ongoing community validation. Fund community co-researchers during development, ensuring training datasets reflect CLD epistemologies from the ground up.
+
+\section{Final Evaluation: Necessary but Incomplete}
+
+The AHRQ-NIMHD framework achieves procedural compliance while lacking binding enforcement redistributing power to affected communities. However, Munn's framework cannot account for initiatives that \textbf{change how AI systems learn}. EQUITAS transcends the ethics versus justice binary by recognizing transformative interventions happen during formative phases when algorithms internalize fairness.
+
+For CLD adolescents facing diagnostic disparities, this isn't academic—it's the difference between algorithms amplifying medical gaslighting and systems serving as advocates for cultural cognitive sovereignty. The question is whether we create learning environments teaching AI to recognize marginalized communities' ways of knowing as equally valid. EQUITAS demonstrates such advocacy is feasible when focusing on cultivation over constraint, learning environments over enforcement mechanisms, and community epistemologies over expert-led governance.
+
+\vspace{1em}
+
+\noindent\textbf{Word Count:} 598 words
+
+\end{document}

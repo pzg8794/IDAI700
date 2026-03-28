@@ -1,0 +1,133 @@
+\documentclass[11pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+
+% Journal-style formatting
+\geometry{
+paper=letterpaper,
+margin=0.6in,
+marginparwidth=0.6in,
+marginparsep=0.1in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+% Hyperlink setup
+\hypersetup{
+colorlinks=true,
+linkcolor=darkblue,
+citecolor=darkblue,
+urlcolor=darkblue,
+pdftitle={AI in Hiring: Beyond the False Binary},
+pdfauthor={Piter Garcia},
+pdfsubject={IDAI700 Unit 6 Reflection},
+pdfkeywords={AI ethics, hiring, dehumanization, transparency, framework regulation}
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Unit 6 Reflection}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{AI in Hiring: Beyond the False Binary}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}
+{\normalfont\large\bfseries\color{darkblue}}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\color{mediumgray}}
+{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalfont\small\bfseries\color{mediumgray}}
+{\thesubsubsection}{1em}{}
+
+% Title formatting
+\title{
+\vspace*{2in}
+\textbf{\Huge AI in Hiring}\\[1em]
+\LARGE Beyond the False Binary: Transparency Over Technology\\[2em]
+
+\vfill
+\Huge \textbf{Piter Garcia}\\
+\LARGE IDAI700: Ethics of Artificial Intelligence\\
+Rochester Institute of Technology\\
+\texttt{pzg8794@rit.edu}\\
+
+\vfill
+\Huge \textbf{October 26, 2025}
+}
+
+\author{}
+\date{}
+
+\begin{document}
+
+% Cover page
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+% Restore header/footer
+\pagestyle{fancy}
+\newpage
+
+\section{Part 1: What Goes Wrong}
+
+\subsection{Why Technology Fails as Promised}
+Schellmann documents that hiring AI fails not through accident but through deliberate business design. Resume screeners recognize only 40\% of résumé information while identifying meaningless correlations—names, locations, sports—as job-performance proxies. Personality prediction tools produce contradictory results across the same person's social media profiles. AI games claim to measure cognitive ability but actually test game-playing competence, not job capability. Vendors hide validation failures behind NDAs while marketing tools as \enquote{scientifically validated.} The fundamental failure: tools optimize for measurable metrics rather than job-relevant capabilities, prioritizing revenue over accuracy.
+
+\subsection{Why AI Echoes Pseudoscience}
+Schellmann compares modern AI to phrenology because both make identical philosophical assumptions: inner character manifests in outer appearance, and scientific instruments can reliably extract this information. Phrenology read skull bumps; modern AI reads facial micro-expressions, voice tone, and game behavior. Both share essentialism (stable inner traits manifest externally) and technological determinism (instruments remove human bias). The comparison reveals that vendors use AI as rhetorical camouflage, hiding discredited frameworks society rejected—physiognomy, Lombroso's \enquote{criminal types}—inside algorithmic opacity while claiming innovation.
+
+\subsection{How Faulty AI Harms Applicants}
+The real question isn't \enquote{how do AI fail?} but \textit{why are companies allowed to weaponize faulty systems for profit while claiming efficacy?} AI amplifies systematic harm already embedded in human processes. Applicants experience rejection without explanation, inability to challenge decisions, and compounding discrimination—CLD candidates, people with disabilities, and immigrants face algorithmic exclusion simultaneously across hiring, healthcare, and education. The opacity transfers blame inward: applicants internalize \enquote{maybe I'm not good enough} when the actual cause was algorithmic failure measuring irrelevant proxies.
+
+\section{Part 2: The Human Cost}
+
+\subsection{Defining Dehumanization}
+Fritts and Cabrera define dehumanization as removing human presence from processes where human presence was fundamental—replacing human judgment's capacity to be \enquote{genuinely moved} by a candidate with algorithmic scores. However, their definition requires technical correction: AI doesn't operate \enquote{without understanding} but with \textit{bounded understanding}—constrained to metrics while human understanding extends to meaning. No training data can overcome this structural limitation: algorithms cannot recognize what requires embodied, relational, contextual judgment.
+
+\subsection{AI Treatment vs. Human Treatment}
+The question \enquote{how do AI systems treat people differently?} creates a false binary. Both AI \textit{and} humans can systematically abuse applicants through opacity. Fritts and Cabrera mourn lost human presence without acknowledging that human presence can be weaponized. The real problem isn't choosing between algorithmic or human judgment—it's preventing abuse systematically through transparency, education, and governance frameworks that expose what's being measured and why.
+
+\subsection{The Ballet Dancer's Lesson}
+The ballet dancer example reveals not AI-specific dehumanization but systemization itself reducing human complexity to metrics—whether by algorithm or human judge. Humans have dehumanized through bureaucratic systems for centuries; AI made it more efficient and harder to challenge. Dancers feel dehumanized by human judges focused solely on technique scores, ignoring nuance. Painters receive lower scores despite judges acknowledging superior work, prioritizing marketable themes over artistry. The solution isn't eliminating measurement but making measurement transparent, equitable, and community-partnered.
+
+\section{Part 3: Evaluation}
+
+\subsection{Strengths}
+Schellmann provides empirical rigor, documenting specific failures (Amazon's bias, HireVue contradictions) with evidence-based investigation. Fritts and Cabrera offer philosophical clarity, distinguishing dehumanization from bias and showing why \enquote{fair algorithms} don't solve relational problems.
+
+\subsection{Limitations}
+Both create false binaries (AI vs. human) obscuring that systemic dehumanization operates identically through algorithmic or bureaucratic opacity. Neither proposes governance solutions addressing power dynamics: transparency mandates, community partnership, or government oversight with monetary incentives (tax benefits tied to compliance, fines for opacity). Schellmann investigates but doesn't solve; Fritts and Cabrera philosophize but disconnect from mechanisms that actually change corporate behavior. Both miss marginalized populations suffering most from both algorithmic \textit{and} human abuse hiding behind opacity.
+
+\subsection{The Actual Question}
+Not \enquote{whether AI or humans dehumanize better} but: \textit{How do we design transparent, equitable, community-partnered systems protecting people from both algorithmic and human abuse?} Companies respond to monetary incentives, not ethics. Framework regulation—mandatory transparency, community oversight, government monitoring with tax-incentive enforcement—addresses systematic harm without prohibiting beneficial applications. The problem isn't technology; it's deployment frameworks lacking accountability.
+
+\vfill
+\noindent\centering\footnotesize\textbf{Word Count:} 598 words (Parts 1--3 combined, excluding titles and questions)\\
+\textit{Note: This work was developed with AI as an intellectual partner, helping me think more critically about systems of power. Full methodology documented in accompanying dialogue journal.}
+
+\end{document}

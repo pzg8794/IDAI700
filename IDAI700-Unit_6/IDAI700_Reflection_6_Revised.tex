@@ -1,0 +1,128 @@
+\documentclass[12pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+
+% Journal-style formatting
+\geometry{
+paper=letterpaper,
+margin=0.7in,
+marginparwidth=0.7in,
+marginparsep=0.7in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+% Hyperlink setup
+\hypersetup{
+colorlinks=true,
+linkcolor=darkblue,
+citecolor=darkblue,
+urlcolor=darkblue,
+pdftitle={Black Box AI and Consent: Director's Higher-Order Consent and Its Limits},
+pdfauthor={Piter Garcia},
+pdfsubject={IDAI700 Unit 6 Reflection},
+pdfkeywords={informed consent, black box AI, higher-order consent, Samuel Director, transparency, power}
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Reflection 6: Black Box AI \& Consent}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{Director's Framework and Its Gaps}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}
+{\normalfont\large\bfseries\color{darkblue}}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\color{mediumgray}}
+{\thesubsection}{1em}{}
+
+% Title formatting
+\title{
+\vspace*{1.5in}
+\textbf{\Huge Black Box AI and Informed Consent}\\[1.5em]
+\Large Samuel Director's Higher-Order Consent and the Problem of Power\\[3em]
+
+\vfill
+\Large \textbf{Piter Garcia}\\
+\normalsize IDAI700: Ethics of Artificial Intelligence\\
+Rochester Institute of Technology\\
+\texttt{pzg8794@rit.edu}\\
+
+\vfill
+\normalsize \textbf{December 7, 2025}
+}
+
+\author{}
+\date{}
+
+\begin{document}
+
+% Cover page
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+% Restore header/footer
+\pagestyle{fancy}
+
+\section*{Part 1: The Promise and Problem}
+
+Samuel Director opens with striking examples of medical AI outperforming human clinicians. AI systems predict hypoxemia during surgery \textit{twice as accurately} as board-certified anesthesiologists. FDA-approved AI diagnoses diabetic retinopathy with 87.2\% sensitivity compared to ophthalmologists' average of 33--73\%. Neural networks achieve ``dermatologist-level accuracy in diagnosing skin malignancy,'' some outperforming average dermatologists entirely. Director notes that AI ``has specialist-level performance in many diagnostic tasks...and can better predict patient prognosis than clinicians.''
+
+Yet this promise creates a paradox: the very opacity that enables such accuracy makes it impossible for clinicians to explain their reasoning to patients. Director defines the \textit{black box problem} as the reality that ``AI systems often cannot explain their reasoning,'' creating a fundamental conflict with informed consent. The core tension is stark: patients have ``a prudential reason to prefer treatment from an AI'' because the AI works better, yet ``given the black box problem, medical AI cannot explain to patients how it makes decisions,'' and ``such an explanation seems to be required by informed consent.'' This is not merely a technical problem; it is a crisis of autonomy. Without explanation, patients cannot make truly informed decisions. Without understanding how an AI reached a diagnosis, patients are denied their right to explanation, which undermines the three core components of informed consent: disclosure, comprehension, and voluntariness.
+
+Director distinguishes between two kinds of opacity. \textit{In-practice opacity} means the AI's reasoning could theoretically be explained with unlimited time and computational power, but is not practically feasible under clinical constraints. \textit{In-principle opacity} means the system is fundamentally unexplainable---even with unlimited resources, no one could articulate how the algorithm reached its decision. Both challenge consent, but in-principle opacity is the more serious threat to our traditional understanding of autonomy in medical care.
+
+\section*{Part 2: Director's Solution---Higher-Order Consent}
+
+Director's answer is bold and pragmatic: we should revise our understanding of informed consent to embrace what he calls \textit{higher-order consent}. Rather than requiring patients to understand the first-order details of how their clinician (human or AI) reasoned to a diagnosis, patients need only be informed about \textit{higher-order} information: the reliability, accuracy, and track record of the system itself.
+
+Director's examples are instructive. He notes that patients already consent to treatments without understanding mechanisms of action: ``Many patients take medications without fully understanding their mechanisms of action, trusting in their proven effectiveness. Patients frequently consent to complex surgical procedures based on overall success rates rather than detailed technical understanding.'' They consent to diagnostic tests without knowing the inner workings of laboratory analysis---``Patients often consent to diagnostic tests without understanding their inner workings, focusing instead on their reliability and accuracy.'' In each case, patients make autonomous decisions based on summary statistics, efficacy data, and institutional trust.
+
+Why, Director asks, should AI be different? If a patient knows that an AI system has been validated on thousands of cases and achieves 87.2\% sensitivity in diabetic retinopathy detection (versus human ophthalmologists' 33--73\%), they possess the information needed to make an informed, autonomous choice. The \textit{reasonable person standard} in bioethics asks: what would a hypothetical reasonable person want to know? Director argues a reasonable person would want to know reliability data so they can ``receive the best medical care available,'' not technical details about neural network architecture.
+
+Director bolsters this with three theoretical grounds. First, the \textit{purpose of consent} is either to protect autonomy or promote well-being. On both grounds, higher-order consent serves: it respects patients' autonomous choice to pursue better outcomes, and it enables them to achieve that well-being. Second, established bioethical disclosure standards---the professional practice standard, reasonable person standard, and subjective standard---all align with higher-order consent. Third, the status quo already operates this way; we do not require detailed explanations for human physicians, so why mandate them for AI?
+
+\section*{Part 3: The Strengths and Limitations of Higher-Order Consent}
+
+Director's argument has real strengths. It is pragmatic and empirically grounded. His observation that medicine already operates on summary statistics and institutional trust is accurate; no patient understands the full causal mechanism of how a statin works or why a particular surgical technique succeeded. His respect for patient autonomy is genuine: he insists that competent adults should be free to choose the treatment they judge best, even if it involves opacity. And his willingness to acknowledge trade-offs is refreshing; he admits explainability might be ideal but comes at the cost of accuracy, forcing an actual choice between autonomy and beneficence.
+
+But the argument contains a critical blindspot: it assumes consent can be truly informed without transparency about *power* and without meaningful alternatives for those who distrust the system. Director's framework works only if three conditions hold---conditions that collapse for marginalized communities.
+
+**First, on transparency:** Higher-order consent trades away first-order explanation without asking *who designed the training data, whose patients were represented, and whose values shaped the benchmark?* An AI system trained 87.2\% accurate on predominantly white, insured, English-speaking diabetic patients may perform catastrophically worse on Dominican American patients with undiagnosed depression, or on undocumented immigrants who cannot disclose full health histories. Director's ``higher-order'' information (accuracy rates) hides this subgroup harm. A marginalized patient saying ``yes'' to an opaque system that performs poorly for people like them is not giving informed consent; they are consenting to their own likely harm. Transparency about who trained the model, which populations were included/excluded, and performance across demographic subgroups is not a nice-to-have; it is a prerequisite for informed consent in conditions of historical medical racism.
+
+**Second, on alternatives:** Higher-order consent is only autonomous if refusal is genuinely possible. Director briefly acknowledges this: ``I am not envisioning a world in which anyone is being forced to be treated by an AI; human doctors are still available.'' But in practice, this is naive. Safety-net clinics serving low-income communities will adopt cheaper AI systems and defund human physicians. Insurance companies will deny coverage for human diagnosticians. Regulatory pressure will accelerate AI adoption. For CLD communities already experiencing scarcity of trustworthy clinicians who share their language or cultural background, ``refusing'' an AI system often means refusing care entirely. That is not autonomy; that is structural coercion.
+
+**Third, on power:** Director frames the problem as technical/ethical (opacity v. transparency, autonomy v. beneficence) when it is fundamentally political. Who decides what information counts as ``higher-order''? Who validates the accuracy claims? Who bears the cost when the AI fails a particular community? Director's answer is implicit: institutions and vendors. Patients are asked to trust without power to hold the system accountable. For marginalized patients whose trust in medical institutions has been systematically betrayed, this is asking too much.
+
+A genuinely informed consent would require what Director's framework lacks: **transparency about subgroup performance, meaningful alternatives, and community power to contest and refuse deployment.** Higher-order consent becomes truly informed only when the communities most vulnerable to harm---those with chronic illness, CLD identity, limited health literacy, prior medical trauma---have binding authority to say no. Until then, higher-order consent simply makes institutional harm seem legitimate through the language of autonomy.
+
+Director's solution is necessary but insufficient. It loosens the consent requirement so opaque AI can be used, but it does not address the deeper question: *consent for whom, and under what conditions?* The answer, for marginalized communities, is: not consent, but *power*.
+
+\vfill
+\noindent\centering\footnotesize\textbf{Word Count:} 732 words
+
+\end{document}

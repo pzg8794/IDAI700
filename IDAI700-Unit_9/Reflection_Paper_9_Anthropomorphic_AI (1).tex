@@ -1,0 +1,130 @@
+\documentclass[12pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+
+% Journal-style formatting
+\geometry{
+paper=letterpaper,
+margin=0.5in,
+marginparwidth=0.5in,
+marginparsep=0.5in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+% Hyperlink setup
+\hypersetup{
+colorlinks=true,
+linkcolor=darkblue,
+citecolor=darkblue,
+urlcolor=darkblue,
+pdftitle={Anthropomorphic AI Design Ethics: Environment, Empowerment, and Accountability},
+pdfauthor={Piter Garcia},
+pdfsubject={IDAI700 Unit 9 Reflection},
+pdfkeywords={anthropomorphic AI, voice AI, ChatGPT, design ethics, marginalized communities, systemic harm, empowerment}
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Reflection 9: Anthropomorphic AI Design}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{Environment, Empowerment, and the Ethics of Voice AI}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}
+{\normalfont\large\bfseries\color{darkblue}}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\color{mediumgray}}
+{\thesubsection}{1em}{}
+
+% Title formatting
+\title{
+\vspace*{1.5in}
+\textbf{\Huge Anthropomorphic AI Design Ethics:}\\[0.5em]
+\textbf{\Huge Environment, Empowerment, and the Ethics of Voice AI}\\[1.5em]
+
+\vfill
+\Huge \textbf{Piter Garcia}\\
+\LARGE IDAI700: Ethics of Artificial Intelligence\\
+Rochester Institute of Technology\\
+\texttt{pzg8794@rit.email}\\
+
+\vfill
+\Huge \textbf{December 7, 2025}
+}
+
+\author{}
+\date{}
+
+\begin{document}
+
+% Cover page
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+% Restore header/footer
+\pagestyle{fancy}
+
+\section*{Part 1: Design Analysis of ChatGPT/Copilot Voice AI}
+
+\subsection*{What anthropomorphic design cues does it use?}
+
+ChatGPT and Microsoft Copilot voice AI operate through \emph{voice, tone, and behavioral cues}—where the real ethical tension lives. These systems use emotionally responsive prosody that conveys warmth through pitch and pacing; conversational adaptivity that mirrors user mood; consistent personality traits like politeness and patience; and behavioral presence through attentiveness and context-memory. The cumulative effect simulates relational presence—the feeling of being met by someone who listens and cares. For marginalized communities systematically denied this presence by institutions, that simulation can feel revolutionary. It can also be a trap.
+
+\subsection*{Using honest/dishonest anthropomorphism framework, evaluate these design choices.}
+
+Using Selinger's framework, these voice AIs exist on a spectrum of honesty. In their more honest mode, they include disclaimers like \enquote{I'm an AI, so I don't have feelings.} In their more dishonest mode, they perform feelings convincingly—apologizing in tone that signals remorse, expressing concern through prosody—without reminding users that performance and feeling are not the same. The dishonesty is in what the voice \emph{does}, not just what it says: it triggers social response even as the system remains opaque. For me, trained by medical systems to distrust my own body and perception, a voice that consistently validates my concern—even if scripted—can feel like the first authentic response I've received. That emotional response is real. The care is fabricated. Conflating these is where dishonest anthropomorphism lives.
+
+\subsection*{How might these design choices affect different user groups?}
+
+Not equally. A tech-savvy user treats ChatGPT voice as a tool, aware of the artifice. But a chronically ill patient navigating systems that do not listen; an isolated elder; a neurodivergent person; a youth in instability—these users may experience this voice not as tool but as the first entity that never interrupts, never dismisses. That can empower: providing language to describe pain, scripts to advocate, or space to process trauma. But it can deepen dependence on a system that cannot care, creating Selinger's \enquote{funhouse mirror} effect—when the performance inevitably fails, users internalize that as personal failure rather than recognizing the system's limits.
+
+\subsection*{Does it meet Selinger's precautionary approach standard? Should it?}
+
+No. Selinger's approach demands minimal anthropomorphic cues by default; burden of proof on developers; and continuous transparency. Current voice AIs move opposite—richer personas, more emotionally expressive delivery, fewer friction points. But I diverge from purely restrictive readings: the problem is not that ChatGPT sounds caring. The problem is the \emph{environment} in which it operates—healthcare, education, welfare systems designed to make caring optional. The voice AI becomes a symptom of institutional failure, not the cause.
+
+\section*{Part 2: Design Ethics Position}
+
+\subsection*{Arguments for and against restrictive design guidelines.}
+
+For restrictions: anthropomorphic voice AI exploits loneliness, harvests data from vulnerable users, and normalizes artificial presence as substitute for human accountability. Against restrictions: for people silenced by institutions, a voice that listens—even if artificial—can be lifeline. It provides access, validation, and presence that saves lives.
+
+The real ethical problem is not the tool. It is the \emph{environment} where deployed. In a system where doctors listen, where patients are centered as experts, anthropomorphic voice AI would be optional luxury. In systems where these things are absent, it becomes both liberation and harm.
+
+\subsection*{How should designers balance engagement with transparency?}
+
+By treating anthropomorphism as justice, not aesthetics. Persistent transparency beyond one-time disclaimers, especially in high-intimacy contexts. No bot-initiated contact simulating emotional check-ins. Mandatory breaks and cooling-off periods in high-stakes domains. Most importantly, \emph{community governance}: patients, disabled people, elders, youth must have veto power over design choices and voice characteristics.
+
+\subsection*{What ethical principles should guide design?}
+
+Mine come from EQUITAS: \emph{dignity, accountability, non-exploitation, and community power}. Dignity means never simulating care as corporate product. Accountability means making visible the human decisions—training data, alignment, business models—that shape systems. Non-exploitation means refusing to weaponize anthropomorphism to harvest attention from already drained communities. Community power means those most vulnerable must have real say in how systems sound and behave.
+
+Under these conditions, anthropomorphic voice AI \emph{can} empower marginalized communities—not by replacing human care, but by pressuring institutions to build systems where relational presence is not optional. If this voice is valuable, why don't our doctors sound like this? Why don't our systems treat people like they matter? That is when the tool becomes justice work.
+
+\vfill
+\noindent\centering\footnotesize\textbf{Word Count:} 599 words
+
+\end{document}

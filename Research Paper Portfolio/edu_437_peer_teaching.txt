@@ -1,0 +1,122 @@
+% EDU437 Peer Teaching Module Presentation (Beamer Slides)
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetheme{Madrid}
+
+\title{Cybersecurity in Healthcare AI Networks}
+\subtitle{Protecting Patient Privacy in AI Diagnostics}
+\author{Piter Garcia}
+\date{EDU437 Peer Teaching Module | Fall 2025}
+
+\begin{document}
+
+\frame{\titlepage}
+
+% ------------------------
+% Learning Objectives
+% ------------------------
+\begin{frame}{Learning Objectives}
+\begin{itemize}
+    \item Explain how healthcare AI systems process data across networks
+    \item Identify points where privacy and equity can fail
+    \item Propose equity-centered mitigations to secure AI workflows
+    \item Apply bias detection and CIA analysis to network threats
+\end{itemize}
+\end{frame}
+
+% ------------------------
+% Case Study Handout
+% ------------------------
+\begin{frame}{Case Study: Ransomware at Dialysis Clinic}
+\textbf{Summary:} In 2023, a regional dialysis center was targeted by a ransomware attack. Critical patient data was encrypted, leading to missed appointments, delayed diagnoses, and systemic disruptions. The AI system used to schedule treatments and flag urgent results became inaccessible. Multiple patients experienced severe medical setbacks.
+
+\pause
+\textbf{Equity Impact:} The most affected patients were low-income individuals relying on public transit and non-English-speaking families unfamiliar with digital rescheduling systems.
+
+\pause
+\textbf{Prompt:} What could have been done differently at the network and AI system level to prevent this harm? How would YOU prioritize protections?
+\end{frame}
+
+\begin{frame}{Save-the-Last-Word Protocol}
+\begin{enumerate}
+    \item Read short case excerpt (previous slide)
+    \item Each peer selects a \textit{“last word”} from the case
+    \item Share your word and explain why it stuck with you
+\end{enumerate}
+\end{frame}
+
+% ------------------------
+% CIA Triad and Activities
+% ------------------------
+\begin{frame}{CIA Triad Refresher}
+\textbf{Confidentiality, Integrity, Availability}
+\begin{itemize}
+    \item C — Patient info exposed? (PII)
+    \item I — Is model output trustworthy?
+    \item A — Can care continue if the system fails?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{AI in the Clinic: Example Pipeline}
+\includegraphics[width=0.9\textwidth]{clinic_pipeline.png} % Add network diagram later
+\end{frame}
+
+\begin{frame}{Bias Snapshot: FNR Table}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{fnr_table_example.png} % Replace with adapted table
+\end{center}
+\end{frame}
+
+\begin{frame}{Network Threat Modeling: Key Questions}
+\begin{itemize}
+    \item Where could attackers intercept or alter data?
+    \item What patient groups are most at risk?
+    \item What controls (technical/policy) can reduce harm?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Roles: Studio Rotation}
+\textbf{Driver} – Implements edits \\
+\textbf{Navigator} – Plans next steps \\
+\textbf{Debugger} – Spots weak points / confusion
+\end{frame}
+
+\begin{frame}{Your Task (Capstone Brief)}
+\begin{enumerate}
+    \item Annotated network diagram
+    \item Risk assessment table
+    \item Bias detection note
+    \item Mitigation proposal
+    \item Screencast walkthrough (3–4 min)
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{UDL & Access Supports}
+\begin{itemize}
+    \item Visual prompts + short texts
+    \item Pair processing & quiet options
+    \item Optional caption script for video
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Exit Ticket Prompt}
+\textbf{One way AI helps my community...} \\
+\textbf{One way it could harm...}
+\end{frame}
+
+\begin{frame}{Rubric Snapshot}
+\includegraphics[width=1.0\textwidth]{rubric_snapshot.png} % Visual rubric if ready
+\end{frame}
+
+\begin{frame}{Wrap-Up + Reuse Note}
+\textbf{Where this goes next:}
+\begin{itemize}
+    \item EQUITAS / RNA Lab crossover
+    \item Healthcare data justice policy memo
+    \item IDAI-700 final paper
+\end{itemize}
+\end{frame}
+
+\end{document}

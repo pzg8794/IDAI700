@@ -1,0 +1,262 @@
+\documentclass[12pt,a4paper]{article}
+
+% Preamble
+\usepackage[margin=0.6in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+\usepackage[authoryear,sort]{natbib}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{tikz}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{EQUITAS: Enforceable Equity for AI Healthcare Diagnostics}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% Title Formatting
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\definecolor{darkblue}{RGB}{0, 51, 102}
+\definecolor{noteback}{RGB}{245,245,250}
+\definecolor{noteborder}{RGB}{70,70,120}
+\definecolor{lightblue}{RGB}{179, 205, 224}
+
+% Document
+\begin{document}
+
+% ===== TITLE PAGE =====
+\begin{titlepage}
+\centering
+\vspace*{2.5cm}
+
+{\Large \textbf{EQUITAS: Enforceable Equity for AI Healthcare Diagnostics}}
+
+\vspace{0.6cm}
+
+{\large A Justice-Based Framework Grounded in Community Co-Design, Binding Governance, and Civic Literacy}
+
+\vspace{1.6cm}
+
+{\normalsize A PhD-Level Research Framework}
+
+\vspace{1.6cm}
+
+{\normalsize Integrating Standpoint Epistemology, Power Analysis, and Enforceable Accountability}
+
+\vspace{2.4cm}
+
+{\large \textbf{Piter Z. Garcia Bautista} \par}
+{\large Ph.D. Candidate in Data Science \textbullet{} M.S. Computer \& Data Science \textbullet{} M.S. Teaching \& Inclusivity}
+
+\vspace{0.3cm}
+
+{\normalsize December 2025}
+
+\vspace{2.5cm}
+
+{\small Rochester Institute of Technology \\ Golisano Institute for Sustainability}
+
+\vfill
+
+{
+\footnotesize \textit{Prepared as a comprehensive framework synthesizing IDAI700 (Ethics of Artificial Intelligence), ED415 (Adolescent Development), and grounded in my ED415 Research Brief on equitable diagnostic tools for culturally and linguistically diverse (CLD) adolescents} \\
+
+\vspace{0.3cm}
+
+\textit{\tiny\textbf{Academic Integration Statement:} This paper synthesizes five peer-reviewed sources from my IDAI700 Research Portfolio: Nadarzynski et al. (2024) on co-design as origin of trust; Lekadir et al. (2025) on governance infrastructure; Sagona et al. (2025) on trust as measurable outcome; Marko et al. (2025) on empirical disparities; and Chen et al. (2023) on translating ethics into engineering. These are grounded in and validated by my ED415 Research Brief, which provides the quantitative proof of harm and empirical synthesis. My Resistance Mapping application provides the pedagogical methodology. EQUITAS demonstrates that enforceable equity demands simultaneous transformation across epistemic authority (whose knowledge counts), procedural justice (who decides), and distributive justice (who bears harm and benefits).}
+}
+
+\end{titlepage}
+
+\clearpage
+
+% ===== ABSTRACT =====
+\begin{abstract}
+
+\textit{What happens when diagnostic tools are designed without those most likely to be harmed?}
+
+For culturally and linguistically diverse (CLD) adolescents—especially those navigating intersecting identities of ADHD, chronic illness, depression, and childhood trauma—diagnostic systems have long functioned as instruments of erasure. Diagnostic underrecognition is not random; it is patterned, reproducible, and grounded in historical institutional neglect. My own 13-year journey from diagnostic invisibility to framework designer taught a singular lesson: principles without enforcement become ethics theater. This paper advances \textbf{EQUITAS}, a governance framework that operationalizes enforceable equity for AI healthcare diagnostics through three integrated mechanisms: (1) \textit{Equity-Centered Co-Design with Decision Authority}, grounding community participation in binding veto power; (2) \textit{Binding Governance with Enforcement Infrastructure}, translating abstract fairness principles into auditable, mandatory institutional practices with measurable thresholds and community oversight; and (3) \textit{Civic Literacy via Digital Resistance Mapping}, a pedagogical approach that prepares CLD communities to interpret, contest, and reshape diagnostic technologies.
+
+\vspace{0.5em}
+
+The framework synthesizes five peer-reviewed sources from my IDAI700 Research Portfolio: Nadarzynski et al. (2024) demonstrate that co-design is the origin of trust; Lekadir et al. (2025) specify how governance infrastructure makes practices auditable; Chen et al. (2023) prove that fairness is technically achievable and operationalizable; Sagona et al. (2025) clarify that trust is an engineered outcome requiring measurable practices; and Marko et al. (2025) document that disparities are structural and reproducible. These sources are grounded in and empirically validated by my ED415 Research Brief, which provides quantitative proof of harm (40--50\% ADHD/depression underdiagnosis in Latino adolescents) and demonstrates how these five papers operationalize justice for the exact populations documented to be harmed.
+
+\vspace{0.5em}
+
+The central thesis is that diagnostic AI must be treated as a justice-critical institution with enforceable equity requirements, not optional enhancements. If documented diagnostic harm concentrates in CLD populations—a reality my ED415 research confirms—and those populations carry historical legacies of medical neglect and racialized dismissal, then precaution is not perfectionism—it is a basic safety stance. EQUITAS operationalizes this principle through explicit performance thresholds (equalized-odds gaps $\leq 3\%$, true-positive-rate ratios $0.9$--$1.1$), mandatory community veto authority, continuous monitoring with automatic escalation and suspension protocols, and public harm ledgers that document where benefits and harms fall.
+
+\vspace{0.5em}
+
+\noindent {\footnotesize\textit{\textbf{Keywords:} AI ethics, healthcare diagnostics, procedural justice, CLD adolescents, community governance, enforceable accountability, epistemic justice, power analysis, co-design, binding enforcement}}
+
+\end{abstract}
+
+\clearpage
+\footnotesize\tableofcontents
+\clearpage
+
+%==============================================================================
+\section{Introduction}
+%==============================================================================
+
+\subsection*{\textit{What's your topic?}}
+
+My topic is the design, governance, and deployment of AI-assisted diagnostic tools for culturally and linguistically diverse (CLD) adolescents, particularly those navigating intersecting marginalized identities. The specific problem: existing diagnostic systems—both human and algorithmic—systematically fail to recognize CLD adolescents' symptoms, resulting in underdiagnosis, delayed intervention, and compounded developmental harm.
+
+\subsection*{\textit{Why does it have important ethical dimensions?}}
+
+Diagnostic systems are not neutral tools; they are justice-critical institutions that determine who gets seen, believed, and cared for. When these systems fail to recognize CLD adolescents, three forms of injustice occur simultaneously: (1) \textbf{Epistemic injustice}—marginalized communities' knowledge about their own bodies is systematically discounted; (2) \textbf{Procedural injustice}—those most affected have no meaningful authority over design, deployment, or accountability; (3) \textbf{Distributive injustice}—the burden of algorithmic error concentrates in marginalized populations while benefits accrue to majorities. These injustices are not accidental; they are produced by systems that encode majority-culture assumptions, ignore subgroup performance, and preserve institutional power while claiming equity through language alone.
+
+\subsection*{\textit{What's the main ethical position you will advance?}}
+
+I advance the position that \textbf{trustworthy, equitable diagnostic AI for CLD adolescents is impossible without simultaneous transformation of both technical systems and governance institutions, and that principles without enforcement mechanisms become ethics theater}. Specifically: (1) Co-design must be upgraded from participation to co-authority with binding veto power; (2) Governance must move from voluntary best-practices to mandatory, enforceable infrastructure with measurable thresholds and automatic escalation protocols; (3) Communities must be equipped with civic literacy to act as algorithm auditors, not remain passive subjects; (4) Any diagnostic system that achieves overall accuracy while systematically harming marginalized subgroups is unsafe and should not be deployed until equity is demonstrated. This position rejects the premise that speed, aggregate benefit, or technical sophistication justify inequitable harm.
+
+%==============================================================================
+\section{Background: Scholarly Sources}
+%==============================================================================
+
+\subsection*{\textit{What do the scholarly sources in your research portfolio say about this issue?}}
+
+My five peer-reviewed sources establish a progressive argument chain:
+
+\textbf{Nadarzynski et al. (2024)} argue that genuine co-design—not consultation—is foundational to trustworthy AI. They show that when marginalized communities are embedded as co-designers from problem framing through retirement, tools are more usable, better adapted, and encounter less resistance. The ethical insight: marginalized communities possess situated knowledge essential to system functioning, and epistemic justice requires treating them as credible knowledge producers.\cite{nadarzynski2024}
+
+\textbf{Lekadir et al. (2025)} translate principles into governance infrastructure. FUTURE-AI specifies six pillars (Fairness, Universality, Traceability, Usability, Robustness, Explainability) mapped to concrete practices: data governance, subgroup reporting, model cards, post-deployment monitoring, and retirement criteria. The ethical insight: ethics requires auditable, documented practices—not slogans.\cite{lekadir2025}
+
+\textbf{Sagona et al. (2025)} reframe trust as an outcome you can measure, not a vibe. They argue trustworthiness depends on: explainability at point of care, empowered Community Advisory Boards, and subgroup fairness validation. They also make a crucial move: they reframe community resistance to medical AI not as irrationality but as historically justified distrust.\cite{sagona2025}
+
+\textbf{Marko et al. (2025)} document the empirical mandate. Their systematic review of 129 healthcare AI systems shows AI reliably underperforms for marginalized populations across diagnostic domains. Causes: skewed training data, homogeneous teams, aggregate metrics that hide subgroup harm. The gap: disparities are documented, remedies are recommended, yet institutions continue deploying harmful systems.\cite{marko2025}
+
+\textbf{Chen et al. (2023)} provide the technical playbook. They prove fairness is not zero-sum with accuracy; it requires: disaggregated subgroup metrics, context-sensitive fairness definitions, and comprehensive mitigation strategies (pre-, in-, post-processing). The ethical insight: operationalizing equity is technically tractable—institutions lack incentives and accountability, not knowledge.\cite{chen2023}
+
+\subsection*{\textit{What's your take on their positions?}}
+
+These five sources are individually strong but structurally incomplete. Nadarzynski provides participatory process without enforcement authority; without binding veto power, co-design risks tokenism. Lekadir specifies practices but assumes voluntary adoption; without mandatory compliance, governance becomes optional. Sagona measures trust but doesn't mandate action when trust metrics fail. Marko documents harm but doesn't prescribe enforcement; without consequences, documentation becomes archival rather than actionable. Chen proves fairness is achievable but assumes institutions will implement; without governance mechanisms and community authority, technical knowledge remains inert.
+
+EQUITAS is my response: I integrate these five sources into a single system where co-design HAS authority, governance IS mandatory, trust IS measured AND acted upon, harm IS documented AND stopped, and technical fairness IS implemented because failure has consequences. The missing piece in each source is enforcement—the mechanisms that transform voluntary best-practices into binding requirements.
+
+\subsection*{\textit{How have these articles informed your understanding of the ethical dimensions?}}
+
+These sources transformed how I understand the problem. Initially, I thought the issue was technical: algorithms need to be fairer, systems need to include more data. These sources revealed the deeper issue is institutional: it's not that we lack knowledge about fairness, it's that institutions lack incentives to implement it and communities lack authority to demand it. They taught me that ethics without enforcement becomes theater, and that justice requires power redistribution, not just procedural participation. They showed me that my lived experience of diagnostic harm is not anecdotal—it's systematic evidence of institutional failure documented across 129 healthcare systems. They gave me vocabulary and method: epistemic injustice, procedural justice, distributive justice, standpoint epistemology. Most importantly, they showed that the solution isn't incremental; it's structural. You don't fix an unjust system by making it slightly more inclusive. You fix it by changing who holds decision authority and making equity a non-negotiable condition of operation.
+
+%==============================================================================
+\section{Your Argument: EQUITAS in Full Detail}
+%==============================================================================
+
+\subsection*{\textit{In full detail, what's your ethical argument?}}
+
+\subsubsection{The Problem: Diagnostic Disparity as Systemic Injustice}
+
+CLD adolescents experience diagnostic disparity not because individual clinicians or algorithms make random mistakes, but because diagnostic systems were historically designed for, validated on, and optimized around majority-culture norms. My ED415 research brief documents that Latino adolescents are underdiagnosed for ADHD at rates 40--50\% lower than white peers despite equal or higher symptom burdens, experience longer delays before diagnosis, and receive less comprehensive follow-up care.\cite{garcia_ed415} This is not exceptional; Marko et al.'s review of 129 systems confirms AI reliably fails marginalized populations across domains.\cite{marko2025}
+
+When ADHD, chronic illness, depression, and childhood trauma intersect, misrecognition is compounded: trauma-induced hypervigilance is misread as oppositional defiance; executive dysfunction is moralized as laziness; somatic symptoms are dismissed as psychosomatic. The system does not see the adolescent; it imposes majority-culture interpretations onto experiences it was never designed to recognize.
+
+AI does not enter a neutral space. If trained on data encoding majority-culture presentations as ``normal'' and CLD presentations as ``noise,'' then algorithmic underperformance is not a bug—it's the system working as designed. This creates a governance illusion: institutions publish equity language, deploy fairness dashboards, hold ethics meetings, while preserving the underlying power structures that produce inequity. Ethics becomes theater because principles lack teeth.
+
+\subsubsection{The Framework: Three Pillars of Enforceable Equity}
+
+I propose EQUITAS—three integrated pillars that transform equity from aspirational to mandatory:
+
+\textbf{Pillar 1: Equity-Centered Co-Design with Decision Authority.} Following Nadarzynski et al., I require co-design across the entire AI lifecycle.\cite{nadarzynski2024} But I upgrade it: co-design is only legitimate when marginalized communities hold BINDING AUTHORITY—not consultative input—over what the system is for, what counts as a symptom, what language is acceptable, what trade-offs are forbidden, and what happens when the system causes documented harm. This directly addresses epistemic injustice by treating CLD narratives as primary diagnostic knowledge. Operationally: Youth and Community Advisory Boards (CABs) with formal voting power, meeting schedules that enable genuine participation, and documented authority to reject designs, block deployment, or demand remediation.
+
+\textbf{Pillar 2: Binding Governance with Enforcement Infrastructure.} I adopt Lekadir et al.'s FUTURE-AI governance backbone but add enforcement layers that transform best-practices into binding requirements.\cite{lekadir2025} Pre-deployment: mandatory subgroup validation with explicit thresholds (equalized-odds gaps $\leq 3\%$, true-positive-rate ratios $0.9$--$1.1$, subgroup calibration error $< 0.03$).\cite{chen2023} If a system cannot meet these thresholds, it should not be deployed. Deployment: continuous monitoring with dashboards accessible to communities. When metrics exceed thresholds, automatic escalation is triggered. If an equalized-odds gap drifts above 5 percentage points for two weeks, remediation becomes mandatory. If remediation does not restore performance within four weeks, automatic suspension occurs. CABs have explicit veto authority over reactivation. This addresses distributive justice by ensuring burden doesn't concentrate in marginalized populations.
+
+\textbf{Pillar 3: Civic Literacy via Digital Resistance Mapping.} Trustworthy deployment requires communities that can interpret disclosure and exercise governance authority with knowledge. I extend Rochester's Resistance Mapping pedagogy into digital resistance mapping: using computational tools (Python, GIS) to compute fairness metrics over real and historical maps, helping CLD youth and families map where algorithmic decisions come from, where harm accumulates, and what interventions are possible. This is not ``education as substitute for governance''—it's education as a precondition for legitimate consent and community power. It addresses procedural justice by equipping communities to act as algorithm auditors rather than remaining passive subjects.
+
+\subsubsection{Why This Approach is Ethically Sound}
+
+EQUITAS is grounded in standpoint epistemology: my lived experience of diagnostic harm is not decoration—it's situated knowledge about how systems fail. My trajectory from erasure to framework design is evidence that those most harmed possess insight essential to repair.\cite{garcia_ed415}
+
+EQUITAS is responsive to power analysis: it explicitly treats equity as requiring power redistribution, not merely procedural inclusion. By embedding CAB veto rights, binding thresholds, automatic escalation, and civic-literacy programs, EQUITAS treats equity as a safety requirement, not an optional value.
+
+EQUITAS addresses implementation gaps by connecting abstract ethics to concrete practice. Trustworthiness is demonstrated through auditable mechanisms: governance minutes, metric dashboards, harm ledgers, community testimony—not through reassurance or technical sophistication alone.
+
+%==============================================================================
+\section{Counterargument and Response}
+%==============================================================================
+
+\subsection*{\textit{Identify and respond to the strongest objection to your ethical position}}
+
+\subsubsection{The Pragmatic Utilitarian Objection}
+
+The strongest objection is pragmatic and utilitarian: EQUITAS is too expensive, too slow, and too burdensome for resource-constrained healthcare systems. Requiring CABs with veto power, extensive validation, continuous auditing, and literacy programs will substantially delay deployment of diagnostic tools that could benefit the majority now. If a depression screener could help 80--85\% of adolescents immediately, requiring years of co-design, validation, and governance structure establishment might produce net harm by withholding benefits from thousands while perfecting systems for the few. On this view, deploying ``good enough'' systems and iteratively improving equity is more ethical than precautionary non-deployment. The objection concedes that inequity exists but argues that speed and aggregate benefit justify accepting higher error rates in marginalized populations.
+
+\subsubsection{Refutation: The Utilitarian Calculus is Flawed}
+
+This objection fails on three grounds:
+
+\textbf{First, ethically.} It encodes a hierarchy of moral worth: CLD adolescents are implicitly positioned as acceptable ``error margins'' for majority benefit. This reproduces the exact historical pattern Marko et al. document: marginalized groups bear disproportionate risks while majorities capture benefits, rationalized as reasonable cost-benefit analysis.\cite{marko2025} If we would reject an algorithm that systematically misdiagnosed white adolescents by 40\%, we cannot ethically accept the same for Latino adolescents. The utilitarian argument claims marginalized lives have lower moral weight, which violates basic principles of justice.\cite{garcia_ed415}
+
+\textbf{Second, empirically.} The ``good enough now, perfect later'' narrative is unsupported. Marko et al. show that systems deployed without inclusive design, validation, and community governance rarely drift toward equity; instead disparities persist and widen because underlying structural causes remain unaddressed.\cite{marko2025} Once deployed, institutions have strong incentives to defend systems, minimize reported harms, and frame improvements as ``future work'' rather than safety corrections. My ED415 research further demonstrates that underdiagnosed CLD adolescents experience cumulative harms that compound across years—a 13-year diagnostic delay is not a minor cost.\cite{garcia_ed415}
+
+\textbf{Third, trust dynamics matter more than utilitarian calculus recognizes.} Sagona et al. demonstrate that when communities experience AI as another site of institutional misrecognition, trust erodes not only in that tool but in clinicians and institutions deploying it.\cite{sagona2025} From a long-term utilitarian perspective accounting for sustainability, legal liability, reputational damage, and community disengagement, inequitable deployment often produces net harm when all consequences are included.\cite{sagona2025}
+
+\subsubsection{Acknowledging Genuine Constraints and Proposing Tiered Implementation}
+
+The utilitarian objection does surface real tensions: healthcare systems operate under genuine resource scarcity, and adolescent mental-health crises demand urgent response. EQUITAS treats this as a governance problem, not an excuse to normalize predictable injustice.
+
+I propose tiered implementation: large academic medical centers implement the full framework; medium-sized systems adopt core EQUITAS with basic CABs and subgroup reporting; small safety-net clinics implement minimal viable EQUITAS including community representation and basic fairness metrics. Public funding mechanisms and open-source toolkits can reduce financial burden. The ethical requirement is not identical infrastructure everywhere, but a refusal to deploy systems that have never been evaluated for populations most likely to be harmed. If a clinic cannot afford EQUITAS compliance, the response is institutional investment, not acceptance of harm.
+
+%==============================================================================
+\section{Conclusion}
+%==============================================================================
+
+\subsection*{\textit{Sum up your position}}
+
+Diagnostic systems are justice-critical institutions that shape who is seen, believed, and cared for. My position is that trustworthy, equitable diagnostic AI for CLD adolescents requires: (1) genuine co-design upgraded from participation to decision authority; (2) governance infrastructure that is mandatory, not voluntary, with measurable thresholds and automatic enforcement; (3) civic literacy that prepares communities to act as algorithm auditors; (4) explicit rejection of the premise that aggregate benefit justifies marginalized harm. This position rejects the assumption that ethics principles alone are sufficient—without enforcement mechanisms and power redistribution, principles become theater.
+
+\subsection*{\textit{Clarify its practical implications for individuals and society}}
+
+For individuals: CLD adolescents, families, and youth advocates gain enforceable authority to stop harmful systems, demand transparency, and reshape tools designed to serve them. They transition from passive subjects to active auditors and decision-makers.
+
+For clinicians and institutions: diagnostic AI is treated as a safety requirement (like FDA approval) rather than an efficiency enhancement. Institutions cannot claim equity while avoiding measurable accountability.
+
+For society: the framework models how justice and technical systems can be integrated—not as competing values but as mutually reinforcing requirements. It challenges the assumption that innovation requires sacrificing equity, showing instead that equity enables more trustworthy, ultimately more widely-adopted systems. It demonstrates that marginalized communities' demands for justice are not obstacles to progress; they are prerequisites for ethical progress.
+
+%==============================================================================
+\section*{AI Reflection (300 words, excluded from word count)}
+%==============================================================================
+
+\subsection*{\textit{How specifically did you use AI?}}
+
+I used AI in four specific ways: (1) \textbf{Drafting}: transforming detailed outlines into section-level prose, maintaining voice and argumentation; (2) \textbf{Argument development}: testing whether claims were operationally specific or vague, forcing articulation of what CAB veto means procedurally, what trust as an outcome requires institutionally; (3) \textbf{Counterargument strengthening}: drafting the strongest utilitarian objection, then ensuring my refutation was rigorous; (4) \textbf{Structure testing}: ensuring each section answered its guiding question completely.
+
+\subsection*{\textit{What did you learn about AI's abilities and limitations?}}
+
+Ability: AI excels at rapid drafting, structural organization, and helping translate abstract concepts into concrete language. It can maintain argumentative coherence across long documents and adapt language to audiences.
+
+Limitation: AI tends toward premature consensus, smoothing over power conflicts and making justice language sound fluent while obscuring structural injustice. It generates plausible-sounding claims without necessarily testing them against evidence or lived reality. It can obscure provenance—I had to constantly check citations and verify that claims mapped back to actual sources.
+
+\subsection*{\textit{Does your experience using AI connect to the ethical issues you researched?}}
+
+Directly. Using AI reinforced my central claim: \textbf{tools without governance become instruments of the status quo}. AI's tendency to smooth over conflict, generate persuasive language, and obscure its own reasoning mirrors what I critiqued in algorithmic systems without enforcement. AI gave me visceral understanding of why transparency, community oversight, and measurable accountability matter. When I couldn't fully read how AI was reasoning, I felt the epistemic injustice I theorize—not having access to the knowledge systems that affect you. This taught me why communities need literacy to audit algorithms: without it, they're subject to systems they cannot understand or contest.
+
+\subsection*{\textit{Did this experience change your perspective on AI ethics?}}
+
+Yes. It moved me from thinking the problem is ``biased algorithms'' to understanding the problem is \textbf{algorithms without community governance}. A perfectly fair algorithm used to make decisions that communities cannot contest is still unjust. The technology is less the issue than the institutions using it. This reinforced my argument in EQUITAS: the solution isn't better AI; it's better governance, better community authority, and better accountability. My experience using AI as a tool that could smooth over my own power analysis made the stakes visceral—I understand now why enforcement and veto power are not optional.
+
+\end{document}

@@ -1,0 +1,148 @@
+\documentclass[12pt,twoside]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{csquotes}
+
+% Journal-style formatting
+\geometry{
+paper=letterpaper,
+margin=0.7in,
+marginparwidth=0.7in,
+marginparsep=0.7in
+}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,73,144}
+\definecolor{mediumgray}{RGB}{64,64,64}
+
+% Hyperlink setup
+\hypersetup{
+colorlinks=true,
+linkcolor=darkblue,
+citecolor=darkblue,
+urlcolor=darkblue,
+pdftitle={AI Training Through SOPHIE: Honest Simulation, Community Voice, and Equitable Medical Education},
+pdfauthor={Piter Garcia},
+pdfsubject={IDAI700 Unit 8/9 Reflection},
+pdfkeywords={SOPHIE, medical training, AI empathy, community-governed design, trauma-informed care, health equity}
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{mediumgray}{\textit{IDAI700 Reflection 8: SOPHIE Project}}}
+\fancyhead[RO]{\small\textcolor{mediumgray}{\textit{Honest Simulation, Community Voice, and Equitable Medical Education}}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section formatting
+\titleformat{\section}
+{\normalfont\large\bfseries\color{darkblue}}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\color{mediumgray}}
+{\thesubsection}{1em}{}
+
+% Title formatting
+\title{
+\vspace*{1.5in}
+\textbf{\Huge AI Training Through SOPHIE:}\\[0.5em]
+\textbf{\Huge Honest Simulation, Community Voice, and Equitable Medical Education}\\[1.5em]
+
+\vfill
+\Huge \textbf{Piter Garcia}\\
+\LARGE IDAI700: Ethics of Artificial Intelligence\\
+Rochester Institute of Technology\\
+\texttt{pzg8794@rit.edu}\\
+
+\vfill
+\Huge \textbf{December 7, 2025}
+}
+
+\author{}
+\date{}
+
+\begin{document}
+
+% Cover page
+\thispagestyle{empty}
+\maketitle
+\newpage
+
+% Restore header/footer
+\pagestyle{fancy}
+
+\section*{Part 1: Understanding SOPHIE}
+
+\subsection*{What is the SOPHIE Project?}
+
+The SOPHIE Project (Standardized Online Patient for Healthcare Interaction Education) is a digital training system developed at the University of Rochester Medical Center by Dr. Thomas Carroll and an interdisciplinary team. It uses \emph{large language models to create avatar-based patient simulations} that look, sound, and respond like real cancer patients. Unlike AI systems designed for clinical diagnosis or direct patient care, SOPHIE's purpose is explicitly \emph{educational}: doctors practice difficult conversations and communication skills with realistic patient scenarios without subjecting vulnerable people to training interactions. The system is fundamentally an \emph{AI application designed to enhance clinician training}—not to replace human judgment or to provide direct care.
+
+\subsection*{What aspects of AI make SOPHIE useful for medical training?}
+
+SOPHIE leverages several key AI capabilities that make it valuable as a pedagogical tool. First, the \emph{large language model enables natural, adaptive conversation} where the avatar responds contextually to a physician's approach, adjusting its emotional presentation based on what the doctor says and does. Second, the system provides \emph{automated, standardized feedback} on communication dimensions including speaking rate (optimal 100--120 words per minute), number and type of questions asked, turn-taking patterns, and \emph{sentiment trajectory}—whether the doctor's emotional tone matches and adapts appropriately to the patient's emotional arc. Third, SOPHIE's design provides \emph{accessibility, consistency, and scalability}: doctors can practice remotely, repeatedly, and flexibly without the logistical complexity and cost of recruiting human actors. This stands in sharp contrast to traditional medical education, where role-play training is expensive, infrequent, and often non-standardized.
+
+\subsection*{Why does Dr. Carroll characterize SOPHIE as a complement to rather than a replacement for human training?}
+
+Dr. Carroll emphasizes complementarity for several crucial reasons. First, \emph{SOPHIE cannot replicate the relational embodiment and unpredictability of real human encounter}. While the avatar provides consistent feedback on communication technique, it does not carry the existential weight of a real patient's suffering or the genuine vulnerability that shapes how clinicians learn to hold others' pain. Second, \emph{SOPHIE addresses a specific, measurable skill}—communication and empathic expression—rather than the holistic clinical wisdom that develops through years of bedside practice grounded in the Vital Talk and Ariadne Labs pedagogies. Third, and most importantly, \emph{SOPHIE cannot fix the systemic burnout and time pressure} that cause the empathy crisis in medicine in the first place. Training alone cannot overcome institutional constraints that drain clinicians' capacity for genuine care. SOPHIE is designed to help doctors practice the communication they \emph{want} to provide—but it does not address why the healthcare system makes that practice so difficult.
+
+\section*{Part 2: Ethical Analysis}
+
+\subsection*{Does SOPHIE incorporate ethical safeguards? If so, what are they and how effective are they?}
+
+Yes, SOPHIE does incorporate important ethical safeguards, though each has real limitations. First, \emph{transparency about AI identity}: SOPHIE explicitly informs clinicians that they are practicing with a digital avatar, not a real person. This prevents the kind of \enquote{strategic anthropomorphism}—deliberate design manipulation that exploits human psychology—that characterizes systems like Character.AI or Replika. The educational context is transparent, and clinicians consent knowingly to a training setting. Second, \emph{no direct harm to vulnerable persons}: because no real cancer patients bear the consequences of poor communication during practice, SOPHIE avoids subjecting people already suffering through misdiagnosis and marginalization to become unwitting training subjects. Third, \emph{grounding in established pedagogy}: SOPHIE incorporates evidence-based communication frameworks rather than arbitrary algorithmic feedback, meaning the system reinforces what research shows actually improves patient outcomes and clinician presence.
+
+However, these safeguards have significant limitations. Transparency depends entirely on proper institutional framing—if a hospital misrepresents SOPHIE or downplays its AI nature, the protective effect dissolves. More critically, \emph{design justice questions remain unresolved}: we do not yet know whether digital avatars authentically represent diverse patient experiences, whether they inadvertently perpetuate stereotypes about whose suffering counts, or whether real patients whose interviews informed the avatars provided genuine, informed consent—and had veto power over how their vulnerability would be digitally reproduced.
+
+\subsection*{Should SOPHIE incorporate additional safeguards? Why or why not?}
+
+Yes, absolutely. SOPHIE urgently needs two critical safeguards grounded in an EQUITAS framework. First, \emph{explicit opt-in consent and veto power for patients whose data informs avatars}. If SOPHIE's simulations are trained on real patient interviews, those patients deserve transparency about how their vulnerability will be used, ongoing control over representation, and meaningful ability to withdraw. This is not just ethical—it is necessary for the system to avoid replicating the patterns of extraction and dehumanization that harmed me and continue to harm marginalized patients. I cannot separate this requirement from my own experience: I was misdiagnosed not because a doctor lacked training, but because the system did not see my body, did not listen to my words, and did not honor my lived experience. If SOPHIE's avatars are trained on a dataset that systematically underrepresents voices like mine—voices of chronic illness, of medical trauma, of racialized and gendered suffering—then SOPHIE will perpetuate those same silences.
+
+Second, \emph{independent audits for stereotype amplification and cultural representation}, conducted by diverse teams that include affected communities. The risk is real: an avatar trained on predominantly white, affluent, anglophone patient interview data will teach clinicians to recognize and respond to suffering that looks and sounds familiar to that training set—while remaining blind to other forms of distress. This is not accidental; it is structural. An EQUITAS audit would ensure that SOPHIE's avatars represent cancer patients across racial, cultural, ability, and socioeconomic lines authentically—not as a \enquote{one-size-fits-all} generic patient, but as particular human beings whose contextual needs matter.
+
+\subsection*{Do you see ethical issues with using AI to represent vulnerable people, like medical patients?}
+
+Yes, deeply. Even in a constrained context like SOPHIE, there are profound tensions. The core issue is this: \emph{using an AI system to simulate a vulnerable person's experience can feel efficient and scalable, but it risks instrumentalizing vulnerability itself}. Some key concerns:
+
+First, there is an \emph{epistemic problem}. An AI avatar trained on patient data captures patterns but loses what Montemayor and colleagues called the \emph{second-person perspective}—the felt understanding of what it is like to be this particular suffering person in their own context. Clinicians may develop communication techniques without ever developing the capacity to imagine how power, identity, and history shape a patient's experience. A cancer patient who is also undocumented, or disabled, or a Black woman—those particular lived realities cannot be compressed into an avatar trained on aggregated data.
+
+Second, there is risk of \enquote{good enough} rationalization. If SOPHIE produces measurable improvements in speaking rate and open-ended questions, institutions may congratulate themselves while avoiding the harder work of addressing why clinicians burn out, why they have forty-five minutes with twenty patients, why electronic medical records fragment attention. The avatar becomes a technological salve that prevents genuine structural reform.
+
+Third, there is a representation problem that cuts to the heart of my research mission. We do not yet know whether SOPHIE's avatars represent cancer patients—particularly those from marginalized communities—with dignity or whether they inadvertently reduce lived experience to training data. This matters not academically but concretely: a Dominican adolescent girl's fears about medical racism, a trans patient's anxiety about being misgendered during vulnerable moments, a person with chronic illness whose pain is chronically dismissed—these are not interchangeable with a generic \enquote{patient.} If SOPHIE does not represent them authentically, it will train clinicians into the same patterns of invisibility that already failed them.
+
+\subsection*{Imagine SOPHIE continues to develop over three years. What might it look like? What would the most important ethical issues be?}
+
+Within three years, I anticipate SOPHIE will become more multimodal and emotionally sophisticated. Avatars may integrate fuller visual cues (facial expressions, body language), voice prosody with deeper emotional inflection, and perhaps even contextual elements representing social determinants of health. Feedback algorithms will measure not just communication metrics but estimated patient \enquote{satisfaction} based on linguistic and behavioral patterns.
+
+\emph{The most critical ethical issue will be anthropomorphism amplification}. As avatars become more realistic and emotionally resonant, clinicians will be at greater risk of \emph{transferring learned empathic behavior only to the avatar context}. They may become skilled at sounding compassionate to a screen while their actual bedside manner remains constrained by institutional time pressure and burnout. Worse, if SOPHIE becomes \enquote{too good,} institutions may argue: \enquote{Why invest in human-centered systemic reform when SOPHIE can provide consistent, scalable empathy training?} Yet a clinician who has practiced only on avatars has never experienced the unpredictability, resistance, grief, and full humanity of a real person. The risk is that we solve the mechanics of empathic communication without preserving the relational vulnerability that gives empathy its moral weight.
+
+Another concern is \emph{vulnerability data harvesting}. Pressure will mount to expand SOPHIE's training dataset—gathering more patient stories to make avatars more realistic. This could create a system where institutions coax cancer survivors to participate in interviews framed as \enquote{helping future training} while actual patients' interests and control over representation remain secondary. The avatar becomes profitable and scalable; the patients become resources.
+
+\emph{The most important safeguard for the next three years is establishing a governance model where affected patients have veto power} over both avatar design and training data sourcing, where continuous external audit ensures representation is authentic across cultures and communities, and where SOPHIE remains strictly a supplement to human training—never a replacement for investing in systemic change that allows clinicians to actually care.
+
+\section*{Conclusion: Can AI Make Us Feel?}
+
+The ethical question I hold is not \enquote{Can AI feel?} That debate is metaphysically interesting but clinically irrelevant. My question is this: \emph{Can AI help clinicians feel—help us feel seen, heard, dignified, empowered—without deceiving us or replacing the human moral work that genuine care requires?}
+
+SOPHIE can serve that purpose if, and only if, it is designed, governed, and continuously audited by the communities it simulates. Not because AI can replace human empathy, but because AI can pressure healthcare systems to finally rebuild the structures of care that failed patients like me. My answer is yes to SOPHIE—contingently, carefully, and under community control—because I believe tools should serve the liberation of those most harmed. That is the EQUITAS standard. That is the only way AI belongs in medicine.
+
+\vfill
+\noindent\centering\footnotesize\textbf{Word Count:} $\sim$600 words (excluding title page, headings, and questions)
+
+\end{document}
