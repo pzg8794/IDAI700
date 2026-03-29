@@ -1,64 +1,55 @@
 \documentclass[10pt]{article}
-\usepackage[margin=0.55in]{geometry}
+\usepackage[margin=0.58in]{geometry}
 \usepackage[hidelinks]{hyperref}
-\usepackage{enumitem}
 \usepackage{microtype}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.35em}
-\setlist[itemize]{leftmargin=1.2em, topsep=0.15em, itemsep=0.15em}
+\setlength{\parskip}{0.30em}
 
 \begin{document}
 
 \begin{center}
 {\large\textbf{Ethics and Fairness Report}}\\
-\textbf{DSCI 601: Applied Data Science I}
+\textbf{DSCI 601: Applied Data Science I}\\
+Piter Z. Garcia Bautista
 \end{center}
 
-My project studies \textbf{fairness-aware sequential decision-making} in two settings:
-clinical diagnostic workflows and quantum-network routing. The core question is how
-different levels of decision context---from non-contextual to contextual to informative
-bandit methods---change fairness, equity, and performance under uncertainty, missing
-information, and distribution shift. Although this project is technical, \textbf{fairness} is not
-an add-on. It is one of the reasons the project exists at all.
+This report primarily focuses on \textbf{fairness}, with \textbf{ethics} providing the broader framework for why fairness must be treated as a design requirement rather than a post-hoc metric. At the same time, the project also implicates \textbf{privacy} and \textbf{security}, particularly from the quantum-network perspective. In that setting, routing and resource-allocation decisions are not only questions of efficiency and equity, but also of how sensitive communication patterns may be exposed, how access is protected, and how system behavior changes under unreliable or adversarial conditions. Accordingly, fairness and ethics are the primary analytic focus of this project, while privacy and security are important secondary considerations that shape how the work should be interpreted and extended.
 
-My earlier AI ethics paper for IDAI700 argued that AI systems affecting marginalized
-communities should not be evaluated only by average performance or institutional claims of
-trustworthiness. They must also be evaluated by who is made visible, whose errors are
-ignored, and whether accountability exists when harm is patterned rather than random. That
-foundation carries directly into this project. In a clinical workflow, fairness matters because
-optimizing overall utility can hide subgroup failures such as false-negative gaps, delayed
-follow-up, or weaker decision support for patients whose context is incomplete, delayed, or
-noisier. In a quantum-routing workflow, fairness matters because routing and resource
-allocation can create service-equity gaps across user or flow groups even when total network
-performance looks strong.
+\textbf{Fairness and Ethics.}
+This project studies \textbf{fairness-aware sequential decision-making} in two domains: clinical diagnostic workflows and quantum-network routing. Fairness relates directly to the project because the central question is not only whether richer context improves learning efficiency, regret, or reward, but whether those same modeling choices alter the distribution of benefit and harm across groups over time. Ethics matters because the project is motivated by the view that systems affecting socially vulnerable populations should not be judged only by aggregate performance or by institutional claims of trustworthiness; they must also be examined for patterned harm, subgroup invisibility, and accountability when disparities persist \cite{buyl2024,garciaBautista2025}.
 
-Addressing fairness changes the project design and implementation in concrete ways. First,
-the system cannot be evaluated on utility alone; it must track disparity over time, including
-group-wise outcome gaps rather than only end-of-run averages. Second, the project must
-model \textit{context quality} explicitly, because missing or degraded context can itself be a
-driver of unfair outcomes. Third, fairness changes the algorithmic comparison: the project
-must compare baselines, contextual methods, and informative-context methods not only on
-regret or reward, but on whether they reduce or amplify disparities. Finally, fairness makes
-mitigation part of implementation rather than an afterthought. At least one fairness-aware
-mechanism must be built into the evaluation stack so the work tests whether disparities can be
-reduced in practice rather than merely documented.
+Addressing fairness and ethics changes the project design and implementation in concrete ways. Evaluation cannot rely only on aggregate regret, reward, or throughput; it must also include subgroup disparity measures that show whether inequities emerge, persist, or intensify during learning. The project must model \emph{context quality} explicitly, since unequal access to informative context can itself generate unfair outcomes. In addition, algorithmic comparisons must ask whether contextual and informative-context methods reduce or amplify disparities under missingness, noise, and distribution shift. These choices make fairness operational rather than rhetorical \cite{buyl2024,leslie2023}.
 
-Fairness also changes what reproducibility and data sharing mean for this project. A
-reproducible system should not require unrestricted sharing of sensitive patient data, so the
-clinical side is designed simulation-first with controllable missingness, noise, and shift.
-That improves reproducibility because others can rerun the same experiments with fixed seeds,
-shared configurations, and documented metrics. At the same time, fairness raises the bar for
-what must be shared: not only code and aggregate scores, but also metric definitions,
-subgroup evaluation procedures, assumptions about groups, and the limitations of the data or
-simulation used. In this sense, fairness strengthens reproducibility by forcing the project to
-make value-laden design decisions visible instead of hiding them behind average performance.
+Fairness and ethics also affect reproducibility. For others to reproduce the work responsibly, the project must share not only code and summary results, but also subgroup definitions, disparity metrics, assumptions about context generation, and the limitations of the evaluation environment. In that sense, fairness strengthens reproducibility by forcing value-laden design decisions to be made visible rather than hidden behind average performance \cite{leslie2023}.
+
+\textbf{Privacy and Security.}
+Privacy and security are secondary rather than primary goals in this project, but they remain relevant because the same fairness-oriented framework is tested in two domains with very different constraints. In the clinical setting, privacy is tied to protecting patient information and directly limits what can be shared. In the quantum-network setting, privacy and security arise through communication exposure, access control, and the possibility that routing behavior is affected by unreliable or adversarial conditions. For that reason, privacy and security are not the main analytic target of the paper, but they are important for interpreting how the project behaves across domains.
+
+Addressing privacy and security would change design and implementation mainly through the project's shared cross-domain framework. Using one fairness-oriented evaluation structure across clinical and quantum testbeds creates an exploratory way to examine whether fairness-aware methods remain meaningful when privacy and security assumptions change. This does not make privacy or security the main contribution of the project, but it does add a useful interpretive layer: the same method can be studied under different assumptions about data sensitivity, communication exposure, and system reliability.
+
+Privacy and security also shape reproducibility and data sharing. Clinical data cannot be shared freely, so that part of the project depends on simulation-first experimentation with controlled missingness, noise, and shift. In the quantum-network setting, reproducibility depends less on releasing sensitive patient data and more on clearly documenting assumptions about network state, routing behavior, exposed communication patterns, and adversarial conditions. As a result, responsible reproducibility requires more than code: it requires transparent documentation of what can be shared, what must be simulated, and what assumptions govern each testbed.
 
 \vspace{0.2em}
 \footnotesize
-\textbf{Selected supporting references:} Friedler et al., ``The Inherent Limitations of AI
-Fairness''; Givens and Morris, ``Fairness \& Abstraction in Sociotechnical Systems''; Alan
-Turing Institute, ``Fairness in AI.'' \\
-\textbf{Conceptual foundation:} \textit{IDAI700\_Research\_Paper.pdf} (AI ethics paper, used as
-motivation rather than reused text).
+\textbf{Selected areas:} Fairness and Ethics (primary focus); Privacy and Security (secondary concerns, especially in the quantum-network context).
+
+\begin{thebibliography}{99}\setlength{\itemsep}{0em}
+
+\bibitem{buyl2024}
+Buyl, Maarten, and Tijl De Bie.
+``Inherent Limitations of AI Fairness.''
+\textit{Communications of the ACM}, 2024.
+
+\bibitem{leslie2023}
+Leslie, David, et al.
+\textit{AI Fairness in Practice}.
+The Alan Turing Institute, 2023.
+
+\bibitem{garciaBautista2025}
+Garcia Bautista, Piter Z.
+\textit{EQUITAS: Enforceable Equity for Diagnostic AI}.
+Unpublished course paper, IDAI-700: Ethics of AI and Data Science, Rochester Institute of Technology, December 2025; used here as conceptual motivation rather than reused text.
+
+\end{thebibliography}
 
 \end{document}

@@ -13,10 +13,10 @@
 - [x] Gather the assignment text and supporting links.
 - [x] Gather the current project framing from the DSCI601 proposal.
 - [x] Extract the main motivation from the IDAI700 AI Ethics paper.
-- [ ] Tighten the one-page draft after compilation review.
-- [ ] Verify the draft compiles cleanly in LaTeX.
-- [ ] Verify the draft stays within one page.
-- [ ] If needed, reduce wording density while preserving the design/reproducibility section.
+- [x] Tighten the one-page draft after compilation review.
+- [x] Verify the draft compiles cleanly in LaTeX.
+- [x] Verify the draft stays within one page.
+- [x] If needed, reduce wording density while preserving the design/reproducibility section.
 
 ## Background notes for future expansion
 
